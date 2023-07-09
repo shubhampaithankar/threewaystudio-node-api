@@ -20,7 +20,7 @@ dotenv.config()
 const server = http.createServer(app);
 const io = new socketIO.Server(server, {
   cors: {
-    origin: 'https://localhost:3000',
+    origin: '*',
     methods: ['GET', 'POST', 'PUT']
   }
 })
